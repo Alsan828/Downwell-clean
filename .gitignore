@@ -1,0 +1,13 @@
+.vs/
+build/
+.deps/
+**/Debug/
+**/Release/
+*.vcxproj.user
+*.suo
+*.user
+*.log
+Log.txt
+*.zip
+/Run/
+/third_party/DxLib/

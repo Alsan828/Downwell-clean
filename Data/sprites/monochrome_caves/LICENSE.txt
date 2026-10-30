@@ -1,0 +1,7 @@
+Monochrome Caves
+作者：Adam Saltsman
+配布元：https://adamatomic.itch.io/mc-caves
+ライセンス：Public Domain
+
+配布元では、個人・商用を問わず自由に使用できるパブリックドメイン素材とされています。
+bw_tiles.pngは配布されたPNGを変更せずに使用しています。

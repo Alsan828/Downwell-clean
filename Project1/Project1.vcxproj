@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{624be1d0-f761-4222-b97e-582997ca80ab}</ProjectGuid>
+    <RootNamespace>Downwell</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Debug'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)'=='Release'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup>
+    <TargetName>Downwell</TargetName>
+    <OutDir>$(SolutionDir)build\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(SolutionDir)build\obj\$(Platform)\$(Configuration)\</IntDir>
+    <DxLibDir>$(ProjectDir)..\third_party\DxLib\</DxLibDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PreprocessorDefinitions>_WINDOWS;NOMINMAX;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(DxLibDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <DisableAnalyzeExternal>true</DisableAnalyzeExternal>
+      <AdditionalOptions>/utf-8 /external:I"$(DxLibDir)." %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(DxLibDir);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Debug'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)'=='Release'">
+    <ClCompile>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Scenes\PlaySimulation.cpp" />
+    <ClCompile Include="Source\Core\Main.cpp" />
+    <ClCompile Include="Source\Core\Game.cpp" />
+    <ClCompile Include="Source\Audio\SoundManager.cpp" />
+    <ClCompile Include="Source\Objects\GameObject.cpp" />
+    <ClCompile Include="Source\Core\InputManager.cpp" />
+    <ClCompile Include="Source\Objects\Player.cpp" />
+    <ClCompile Include="Source\Objects\PlayerCombat.cpp" />
+    <ClCompile Include="Source\Stage\Stage.cpp" />
+    <ClCompile Include="Source\Stage\StageData.cpp" />
+    <ClCompile Include="Source\Stage\Blocks\Block.cpp" />
+    <ClCompile Include="Source\Scenes\PlayScene.cpp" />
+    <ClCompile Include="Source\Scenes\TitleScene.cpp" />
+    <ClCompile Include="Source\Scenes\ResultScene.cpp" />
+    <ClCompile Include="Source\Scenes\SceneManager.cpp" />
+    <ClCompile Include="Source\Graphics\Render.cpp" />
+    <ClCompile Include="Source\Graphics\UiRenderer.cpp" />
+    <ClCompile Include="Source\Graphics\Animation.cpp" />
+    <ClCompile Include="Source\Graphics\FrameAnimation.cpp" />
+    <ClCompile Include="Source\Graphics\SpriteEffects.cpp" />
+    <ClCompile Include="Source\Graphics\SpriteSheet.cpp" />
+    <ClInclude Include="Source\Physics\PhysicsTiming.h" />
+    <ClInclude Include="Source\Physics\Sweep.h" />
+    <ClInclude Include="Source\Scenes\PlaySimulation.h" />
+    <ClInclude Include="Source\Core\Game.h" />
+    <ClInclude Include="Source\Audio\SoundManager.h" />
+    <ClInclude Include="Source\Audio\SoundEffect.h" />
+    <ClInclude Include="Source\Objects\GameObject.h" />
+    <ClInclude Include="Source\Core\InputManager.h" />
+    <ClInclude Include="Source\Objects\Player.h" />
+    <ClInclude Include="Source\Physics\Ground.h" />
+    <ClInclude Include="Source\Stage\Blocks\Block.h" />
+    <ClInclude Include="Source\Stage\Blocks\FixedBlock.h" />
+    <ClInclude Include="Source\Stage\Blocks\BreakableBlock.h" />
+    <ClInclude Include="Source\Stage\Stage.h" />
+    <ClInclude Include="Source\Stage\StageData.h" />
+    <ClInclude Include="Source\Physics\Collider.h" />
+    <ClInclude Include="Source\Physics\Gravity.h" />
+    <ClInclude Include="Source\Scenes\Scene.h" />
+    <ClInclude Include="Source\Scenes\PlayScene.h" />
+    <ClInclude Include="Source\Scenes\TitleScene.h" />
+    <ClInclude Include="Source\Scenes\ResultScene.h" />
+    <ClInclude Include="Source\Scenes\SceneManager.h" />
+    <ClInclude Include="Source\Graphics\Render.h" />
+    <ClInclude Include="Source\Graphics\UiRenderer.h" />
+    <ClInclude Include="Source\Graphics\Animation.h" />
+    <ClInclude Include="Source\Graphics\FrameAnimation.h" />
+    <ClInclude Include="Source\Graphics\SpriteEffects.h" />
+    <ClInclude Include="Source\Graphics\SpriteSheet.h" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\sprites\**\*.png;..\Data\sprites\**\*.bmp;..\Data\sprites\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <StageCsv Include="$(ProjectDir)..\Data\stage_chunks\*.csv" />
+    <SpriteAsset Include="$(ProjectDir)..\Data\sprites\**\*.png;$(ProjectDir)..\Data\sprites\**\*.bmp;$(ProjectDir)..\Data\sprites\**\*.txt" />
+    <AudioAsset Include="$(ProjectDir)..\Data\audio\**\*.wav;$(ProjectDir)..\Data\audio\**\*.ogg;$(ProjectDir)..\Data\audio\**\*.mp3;$(ProjectDir)..\Data\audio\**\*.opus;$(ProjectDir)..\Data\audio\**\*.txt" />
+    <ClCompile Include="Source\Objects\Enemies\Enemy.cpp" />
+    <ClInclude Include="Source\Objects\Enemies\Enemy.h" />
+    <ClCompile Include="Source\Objects\Enemies\EnemyAI.cpp" />
+    <ClCompile Include="Source\Objects\Enemies\EnemyCrawl.cpp" />
+    <ClCompile Include="Source\Objects\Enemies\EnemyWalk.cpp" />
+    <ClCompile Include="Source\Objects\Enemies\EnemyChase.cpp" />
+    <ClCompile Include="Source\Objects\Enemies\TurtleEnemy.cpp" />
+    <ClInclude Include="Source\Objects\Enemies\TurtleEnemy.h" />
+    <ClInclude Include="Source\Objects\Enemies\EnemyAI.h" />
+    <ClCompile Include="Source\Objects\Enemies\GroundEnemy.cpp" />
+    <ClInclude Include="Source\Objects\Enemies\GroundEnemy.h" />
+    <ClCompile Include="Source\Objects\Enemies\FloatingEnemy.cpp" />
+    <ClInclude Include="Source\Objects\Enemies\FloatingEnemy.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Objects\Bullets\Bullet.cpp" />
+    <ClInclude Include="Source\Objects\Bullets\Bullet.h" />
+    <ClCompile Include="Source\Objects\Bullets\BulletSystem.cpp" />
+    <ClInclude Include="Source\Objects\Bullets\BulletSystem.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <Target Name="CopyStageData" AfterTargets="Build">
+    <MakeDir Directories="$(OutDir)Data\stage_chunks" />
+    <Copy SourceFiles="@(StageCsv)" DestinationFolder="$(OutDir)Data\stage_chunks" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CheckDxLib" BeforeTargets="PrepareForBuild">
+    <Error Condition="!Exists('$(DxLibDir)DxLib.h')" Text="DxLib is missing. Run setup-dxlib.ps1 from the project root first." />
+  </Target>
+  <Target Name="CopyAudioData" AfterTargets="Build" Condition="'@(AudioAsset)' != ''">
+    <Copy SourceFiles="@(AudioAsset)" DestinationFiles="@(AudioAsset->'$(OutDir)Data\audio\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopySpriteData" AfterTargets="Build" Condition="'@(SpriteAsset)' != ''">
+    <Copy SourceFiles="@(SpriteAsset)" DestinationFiles="@(SpriteAsset->'$(OutDir)Data\sprites\%(RecursiveDir)%(Filename)%(Extension)')" SkipUnchangedFiles="true" />
+  </Target>
+  <Target Name="CopyDxLibNotice" AfterTargets="Build">
+    <Copy SourceFiles="$(DxLibDir)DxLib.txt" DestinationFiles="$(OutDir)DxLib-Notice.txt" SkipUnchangedFiles="true" />
+  </Target>
+</Project>

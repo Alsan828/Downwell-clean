@@ -1,0 +1,8 @@
+素材：Set of pixel art projectiles
+作者：davidaf3
+配布元：https://opengameart.org/content/set-of-pixel-art-projectiles
+ライセンス：CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+使用画像：projectiles/ricochet_bullet.png（12×3の青い弾）
+PNGは元のファイルのまま使用しています。描画時だけ2倍に拡大し、下向きに回転します。

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Core">
+      <UniqueIdentifier>{ee5b75e8-49e5-5a0d-831f-2ba9dae58723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{9d99d810-726f-4f04-b40d-f9d359f59490}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scenes">
+      <UniqueIdentifier>{d274e264-38fb-50c8-bdb7-77574ca76a8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{114a42c2-c238-51cc-8be4-3ae85ab82f88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects">
+      <UniqueIdentifier>{dd0b5e7e-de4d-5934-8600-64ecbd2bdbca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Objects\Enemies">
+      <UniqueIdentifier>{be9ac710-f52e-58e7-8fb1-d283c8f3947e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Physics">
+      <UniqueIdentifier>{17138bf5-e310-56d6-b224-0c57360a2efa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage">
+      <UniqueIdentifier>{4c79b6ef-d4f5-5d36-bf84-10eba0d2593d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Stage\Blocks">
+      <UniqueIdentifier>{efb7fa69-5b05-56c6-8090-9c719e501f96}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Scenes\PlaySimulation.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Game.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Audio\SoundManager.cpp">
+      <Filter>Audio</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\InputManager.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Core\Main.cpp">
+      <Filter>Core</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Render.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\SpriteEffects.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\UiRenderer.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\Animation.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\FrameAnimation.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Graphics\SpriteSheet.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\Enemy.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\EnemyAI.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\FloatingEnemy.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\GroundEnemy.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\GameObject.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Player.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\PlayerCombat.cpp">
+      <Filter>Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scenes\PlayScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scenes\TitleScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scenes\ResultScene.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Scenes\SceneManager.cpp">
+      <Filter>Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stage\Blocks\Block.cpp">
+      <Filter>Stage\Blocks</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stage\Stage.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Stage\StageData.cpp">
+      <Filter>Stage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Physics\PhysicsTiming.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\Sweep.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\PlaySimulation.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\Game.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Audio\SoundEffect.h">
+      <Filter>Audio</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Core\InputManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Render.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\SpriteEffects.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\UiRenderer.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\Animation.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\FrameAnimation.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Graphics\SpriteSheet.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Enemies\Enemy.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Enemies\EnemyAI.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Enemies\FloatingEnemy.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Enemies\GroundEnemy.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\GameObject.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Objects\Player.h">
+      <Filter>Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\Collider.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\Gravity.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Physics\Ground.h">
+      <Filter>Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\PlayScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\TitleScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\ResultScene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\Scene.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Scenes\SceneManager.h">
+      <Filter>Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage\Blocks\Block.h">
+      <Filter>Stage\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage\Blocks\BreakableBlock.h">
+      <Filter>Stage\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage\Blocks\FixedBlock.h">
+      <Filter>Stage\Blocks</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage\Stage.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Stage\StageData.h">
+      <Filter>Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="Source\Audio\SoundManager.h">
+      <Filter>Core</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Objects\Enemies\EnemyCrawl.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\EnemyWalk.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\EnemyChase.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClCompile Include="Source\Objects\Enemies\TurtleEnemy.cpp">
+      <Filter>Objects\Enemies</Filter>
+    </ClCompile>
+    <ClInclude Include="Source\Objects\Enemies\TurtleEnemy.h">
+      <Filter>Objects\Enemies</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Objects\Bullets">
+      <UniqueIdentifier>{a34d51da-9b5d-469e-8059-bef5fd9cc133}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="Source\Objects\Bullets\Bullet.cpp">
+      <Filter>Objects\Bullets</Filter>
+    </ClCompile>
+    <ClInclude Include="Source\Objects\Bullets\Bullet.h">
+      <Filter>Objects\Bullets</Filter>
+    </ClInclude>
+    <ClCompile Include="Source\Objects\Bullets\BulletSystem.cpp">
+      <Filter>Objects\Bullets</Filter>
+    </ClCompile>
+    <ClInclude Include="Source\Objects\Bullets\BulletSystem.h">
+      <Filter>Objects\Bullets</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\stage_chunks\*.csv" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+    <None Include="..\Data\audio\**\*.wav;..\Data\audio\**\*.ogg;..\Data\audio\**\*.mp3;..\Data\audio\**\*.opus;..\Data\audio\**\*.txt" />
+  </ItemGroup>
+</Project>

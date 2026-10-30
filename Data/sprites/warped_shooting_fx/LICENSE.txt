@@ -1,0 +1,10 @@
+素材：Warped Shooting Fx
+作者：Luis Zuno（ansimuz）
+配布元：https://ansimuz.itch.io/warped-shooting-fx
+ライセンス：CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+使用画像：Assets/Pixelart/hits/hits-1/spritesheet.png → hit-1.png
+          Assets/Pixelart/hits/Hits-2/spritesheet.png → hit-2.png
+用途：弾の命中、敵の踏み付け。PNGは元のファイルのまま使用しています。
+弾・音楽・その他の未使用素材は含みません。

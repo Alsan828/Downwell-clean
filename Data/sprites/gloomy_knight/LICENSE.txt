@@ -1,0 +1,8 @@
+Gloomy Knight
+作者：loveOS by @cookiielove_
+配布元：https://loveosstudio.itch.io/gloomy-knight-16x16
+ライセンス：CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+配布元に記載されたCC0ライセンスに基づいて使用しています。
+knightAtlas.png、healthMeters.png、menuPopUp.pngは配布されたPNGを変更せずに使用しています。

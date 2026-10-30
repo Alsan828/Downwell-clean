@@ -1,0 +1,10 @@
+敵画像：Grotto Escape Pack / Platform Pixel Art Assets
+作者：Luis Zuno（ansimuz）
+配布元：https://opengameart.org/content/platform-pixel-art-assets
+ライセンス：Creative Commons Zero（CC0）
+https://creativecommons.org/publicdomain/zero/1.0/
+
+元のgraphics/enemies.pngをそのまま使用しています。
+16×16の最上段にあるスライム3コマだけを、1コマ200msで繰り返し再生します。
+フレームの切り出し、拡大、左右反転、回転は描画時に行います。
+作者のライセンス原文は同じフォルダーのoriginal-license.txtを参照してください。

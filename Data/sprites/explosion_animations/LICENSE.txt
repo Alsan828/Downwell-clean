@@ -1,0 +1,9 @@
+素材：Explosion Animations Pack（無料の基本パック）
+作者：Luis Zuno（ansimuz）
+配布元：https://ansimuz.itch.io/explosion-animations-pack
+ライセンス：CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+使用画像：Explosions pack/explosion-1-a/spritesheet.png → explosion-a.png
+用途：敵の消滅。32×32の8コマを一度だけ再生します。
+PNGは元のファイルのまま使用しています。有料の追加素材は含みません。

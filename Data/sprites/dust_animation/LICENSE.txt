@@ -1,0 +1,10 @@
+素材：Dust Animation
+原作者：Spring Spring
+PNGスプライトシート化：2D_PlatformerGuy（作者ページのコメント欄）
+配布元：https://opengameart.org/content/dust-animation
+ライセンス：CC0 1.0 Universal（原素材・PNG版ともに明記）
+https://creativecommons.org/publicdomain/zero/1.0/
+
+使用画像：jump_effect.png → dust.png
+用途：着地・ジャンプ・ブロック破壊。10×7の8コマを一度だけ再生します。
+配布されたPNGは元のファイルのまま使用しています。

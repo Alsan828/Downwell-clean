@@ -1,0 +1,19 @@
+ULTIMATE 8BIT SFX LIBRARY VOL 1
+Sound effects by mOsh
+
+Source: https://ef9.itch.io/ultimate-8bit-sfx-library-vol-1
+License: CC0 1.0 Universal
+https://creativecommons.org/publicdomain/zero/1.0/
+
+Original file -> game file
+8bit-shoot1.wav -> shoot.wav
+8bit-jump1.wav -> jump.wav
+8bit-blip1.wav -> land.wav
+8bit-explode1.wav -> break_block.wav
+8bit-blip3.wav -> stomp.wav
+8bit-damage5.wav -> hurt.wav
+8bit-pickup5.wav -> reload.wav
+
+shoot.wav and jump.wav: trimmed, sped up, low-pass filtered and faded.
+land.wav and reload.wav: trimmed, low-pass filtered and faded.
+The other three sound effects are unchanged.

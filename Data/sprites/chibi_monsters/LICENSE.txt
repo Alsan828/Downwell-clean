@@ -1,0 +1,9 @@
+敵画像：Chibi Monsters Set 01
+作者：Luis Zuno（ansimuz）
+配布元：https://opengameart.org/content/chibi-monsters-set-01
+ライセンス：Creative Commons Attribution 3.0（CC BY 3.0）
+https://creativecommons.org/licenses/by/3.0/
+
+bat.png、frog.pngを使用しています。PNGファイルは原画像のままです。
+フレームの切り出し、拡大、左右反転、回転は描画時に行います。
+作者のライセンス原文は同じフォルダーのpublic-license.txtを参照してください。
